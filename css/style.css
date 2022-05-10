@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Niconne&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* utilities */
+.h-3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: none;
+  text-decoration: none;
+}
+.h-4 {
+  font-size: 28px;
+  font-family: Inter;
+  font-weight: 800;
+  text-transform: none;
+}
+
+.jost {
+  font-family: "Jost";
+}
+
+.smallText {
+  font-family: "Jost";
+}
+.section_margin {
+  padding-top: 7.5rem;
+}
+
+.section_margin_custom {
+  margin-top: 7.5rem;
+}
+
+.niconne {
+  font-family: "Niconne", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.77;
+}
+
+.quote {
+  color: #2ec5ce;
+  font-size: 55px !important;
+}
+
+.btn-info {
+  background: #2ec5ce !important;
+}
+
+.btn-info:hover {
+  border-color: #2ec5ce !important;
+}
+/* Navbar styling */
+.navbar {
+  background: #fff !important;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: #2ec5ce !important;
+}
+.navbar-brand img {
+  width: 12rem;
+}
+
+.navbar .nav-item .nav-link {
+  font-size: 18px;
+  font-style: normal;
+  transition: 0.3s;
+  font-weight: 500;
+  color: #000 !important;
+}
+
+.navbar .navbar__socials i {
+  font-size: 23px;
+}
+/* header section */
+
+.bgSection video,
+.bgSection source {
+  border: none;
+}
+
+/* About Section */
+
+.aboutSection--colOne {
+  position: relative;
+}
+
+.aboutSection--colOne .blueCircle {
+  position: absolute;
+  top: -10rem;
+  left: 57%; /*Chnage to 87% when u u have the right image*/
+  filter: blur(60px);
+  opacity: 0.4;
+}
+
+.aboutSection--colOne .purpleCicle {
+  top: 0.9375rem;
+  left: 0;
+  filter: blur(60px);
+  opacity: 0.4;
+  z-index: 100;
+  position: absolute;
+  object-fit: cover;
+}
+
+/* Gallery Section */
+.imageOverlay {
+  position: relative;
+  width: 100% !important;
+  cursor: pointer;
+}
+
+.imageOverlay img {
+  width: 100% !important;
+  max-height: 300px !important;
+  object-fit: cover;
+}
+.imageOverlay .imageDetail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size: 1.125rem;
+  font-family: "Jost";
+  opacity: 0;
+  transition: all 1s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.imageOverlay .imageDetail h6 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.imageOverlay::after {
+  transition: all 1s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #000;
+  opacity: 0;
+  z-index: 1;
+}
+
+.imageOverlay:hover::after {
+  opacity: 0.3;
+}
+
+.imageOverlay:hover > .imageDetail {
+  opacity: 1 !important;
+}
+
+/* Call to actuon section 1 */
+#callToActionOne,
+#callToActionOne .row {
+  background-color: #adc9ff;
+}
+
+/* testimonail section */
+.testimony {
+  box-shadow: 5px 10px 20px 2px rgb(41 41 42 / 7%);
+  border-radius: 0.5rem;
+  text-align: left;
+  max-height: max-content !important;
+}
+
+.testimony__who {
+  text-align: left;
+}
+
+.testimony__who h3 {
+  font-size: 1.125rem;
+}
+
+/* Contact Section */
+#contactSection {
+  background: #d6b1ff;
+}
+
+/* contact section */
+/* Socials where in footer section before revisoon one */
+#contactSection .socials i {
+  font-size: 1rem;
+  border-radius: 6.25rem;
+  background-color: #000;
+  color: #fff;
+  padding: 0.625rem;
+  cursor: pointer;
+}
+
+#contactSection .socials i:hover {
+  color: #d6b1ff;
+}
+
+/* Media Queries  */
+
+@media screen and (max-width: 550px) {
+  .bgSection {
+    height: 50vh;
+  }
+
+  .aboutSection--colOne .h-3 {
+    text-align: left !important;
+  }
+
+  #gallerySection .row,
+  #testimonialSection .row {
+    text-align: left !important;
+  }
+
+  .breaktag {
+    display: none;
+  }
+}
