@@ -203,7 +203,9 @@ body {
 #contactSection .socials i:hover {
   color: #d6b1ff;
 }
-
+.mt-100{
+  margin-top: 100px;
+}
 /* Media Queries  */
 
 @media screen and (max-width: 550px) {

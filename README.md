@@ -1,2 +1,0 @@
-# WEsing
- Responsive web design
