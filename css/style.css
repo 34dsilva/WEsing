@@ -5,6 +5,7 @@ html {
 }
 body {
   font-family: "Inter", sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 /* utilities */
@@ -13,10 +14,12 @@ body {
   font-weight: 800;
   text-transform: none;
   text-decoration: none;
+  /* font-family: "Jost"; */
 }
 .h-4 {
   font-size: 28px;
   font-family: Inter;
+  /* font-family: "Jost"; */
   font-weight: 800;
   text-transform: none;
 }
@@ -61,10 +64,14 @@ body {
 }
 
 .navbar .nav-item .nav-link:hover {
-  color: #2ec5ce !important;
+  /* color: #2ec5ce !important; */
+  color: #3377FF !important;
 }
 .navbar-brand img {
   width: 12rem;
+  position: flex;
+  /* position: absolute; */
+  /* left: -100px; top: 0; */
 }
 
 .navbar .nav-item .nav-link {
@@ -73,6 +80,7 @@ body {
   transition: 0.3s;
   font-weight: 500;
   color: #000 !important;
+  font-family: "Jost";
 }
 
 .navbar .navbar__socials i {
@@ -108,6 +116,13 @@ body {
   position: absolute;
   object-fit: cover;
 }
+
+/* section {
+  background-image: url("images/back.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+} */
+
 
 /* Gallery Section */
 .imageOverlay {
